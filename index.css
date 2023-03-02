@@ -1,0 +1,136 @@
+/* global CSS styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: #0F141B;
+  background: #182635;
+}
+
+/* main layout styling */
+
+main {
+  margin: 0 auto;
+  background: white;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+}
+
+/* header section styling */
+
+.header {
+  padding: 24px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 42px;
+}
+
+.icon-profile,
+.icon-chat
+ {
+  height: 34px;
+}
+
+/* dog-content styling */
+
+.dog-content {
+  position: relative;
+}
+
+.badge {
+  display: hidden;
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  transform: rotate(-30deg);
+  width: 50%;
+}
+
+.avatar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 534px;
+  border-radius: 10px;
+}
+
+.dog-summary {
+  position: absolute;
+  bottom: 1em;
+  left: 1.125em;
+}
+
+.name {
+  color: #fff;
+}
+
+.bio {
+  color: #B7B7B7;
+  font-size: 1.125rem;
+}
+
+/* action section styling */
+
+.actions {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.125em;
+}
+
+.btn-primary {
+  background: white;
+  padding: 16px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgb(233 233 234);
+}
+
+.dislike:hover,
+.dislike:active  {
+  background: #FFE7EF;
+  box-shadow: 0 10px 20px rgb(237 217 223);
+}
+
+.like:hover,
+.like:active {
+  background: #DBFFF4;
+  box-shadow: 0 10px 20px rgb(204 241 230);
+}
+
+/* utilities */
+
+#hidden-msg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
